@@ -1,0 +1,6 @@
+{
+  "name": "Xbox-360-controller-on-cubase",
+  "tagline": "The code is a Script designed to control Cubase using a standar Xbox 360 Controller; this scripts runs using GlovePIE and LoopMidi or Loop1",
+  "body": "### Xbox 360 controller on cubase\r\n\r\n![](http://prntscr.com/ct2q9p)\r\n\r\nWell i found a way to use our Xbox controller in cubase i tested in cubase elements 8; so we're gonna need the following softwares\r\n\r\n1. GlovePIE\r\n1. LoopMidi / Loopbe1\r\n\r\nSimply download and install those programs and download the repository.\r\n\r\nSearch the .PIE file and once there open it with GlovePIE\r\n\r\n![](http://prntscr.com/ct2sh3)\r\n\r\nConfigure manually the midi output and channel, finally press Run\r\n\r\n![](http://prntscr.com/ct2tmk)\r\n\r\nOpen Cubase and create a new Key Command for the Monitor button of the control; the command will be Ctrl+Shift+M\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
