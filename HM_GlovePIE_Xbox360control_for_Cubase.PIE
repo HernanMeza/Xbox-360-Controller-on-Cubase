@@ -1,0 +1,77 @@
+//	Cubase XBOX 360 Controller Driver for GlovePIE and MidiLoop
+//
+//	Code designed by Hernan Meza
+//	Version 1.0 - Basic Features/No Midi funcionality
+//	Date 10/12/2016
+//  Designed for Cubase Elements 8
+
+//	Use for any purpose personal or commercial; 
+//  have fun
+
+midi.DeviceOut = 1
+
+//----------------BUTTONS------------------------------
+
+//Activate Record (Track)
+
+	Key.r = Xinput.LeftThumb
+
+//Activate Monitor 
+	
+	Key.m and Key.Ctrl and Key.Shift= Xinput.RightThumb
+
+//Play 
+	Key.Spacebar = XInput.A
+
+//Record
+	Key.Multiply = XInput.B
+
+//Undo
+	Key.z and Key.Ctrl = XInput.Y
+
+//Delete
+	Key.Delete = XInput.X
+
+
+//--------------CONTROL HEAD-------------------------
+
+//Mixer
+	Key.F3 = XInput.LeftTrigger
+
+//Click
+	Key.c = XInput.RightTrigger
+
+//time for time
+	Key.Numpadplus  and key.Ctrl = XInput.RightShoulder
+	Key.Numpadminus and key.Ctrl = XInput.LeftShoulder
+
+//--------------ANALOG PADS-----------------------------
+
+//Zonas muertas Ambos PAD (Values between 0 and 1) 
+	var.LddX = 0.25
+	var.LddY = 0.25
+	var.RddX = 0.25
+	var.RddY = 0.25
+
+//Left Stick – Zoom
+	Key.H = Xinput.Joy1Y > var.LddY
+	Key.G = Xinput.Joy1Y < -var.LddY
+	
+//Right Stick – Movement   <->
+	key.Numpadminus = Xinput.Joy2X < -var.LddX
+	key.Numpadplus  = Xinput.Joy2X > var.LddX
+
+//--------------DIRECTIONAL-PAD---------------------------
+	
+	Key.Up   = XInput.Up
+	Key.Down = XInput.Down
+	Key.Left = XInput.Left
+	Key.Right= XInput.Right
+
+//----------------Middle------------------------------------
+
+//SAVE
+	Key.s and Key.Ctrl = Xinput.back
+
+//SHIFT+B
+	Key.NumPadDot = Xinput.start
